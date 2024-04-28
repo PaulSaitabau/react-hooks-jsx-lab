@@ -3,10 +3,13 @@ import { name, city } from "../data/data.js";
 
 function Home() {
   // update the JSX being returned!
-  return <div>
-    <h1>Welcome to {name}'s Home</h1>
-      <p>City: {city}</p>
-  </div>;
+  return (
+    <div id="home">
+      <h1 style={{ color: "firebrick" }}>
+        {name} is a Web Developer from {city}
+      </h1>
+    </div>
+  );
 }
 
 export default Home;
